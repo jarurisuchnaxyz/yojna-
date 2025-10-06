@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>सरकारी योजनाएँ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* 🔷 Header Box */
+    header {
+      position: relative;
+      text-align: center;
+      background: linear-gradient(90deg, #004aad, #00c853);
+      color: white;
+      padding: 50px 10px 40px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    /* 🧾 Title + Subtitle */
+    header h1 {
+      font-size: 30px;
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin: 8px 0 25px;
+      opacity: 0.9;
+      font-size: 17px;
+    }
+
+    /* 🧑‍💼 PM & CM Images */
+    .pm-img, .cm-img {
+      position: absolute;
+      top: 20px;
+      width: 210px;
+      height: 210px;
+      border-radius: 50%;
+      border: 4px solid white;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    .pm-img {
+      left: 25px;
+    }
+    .cm-img {
+      right: 25px;
+    }
+    .pm-img img, .cm-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* 🔸 Tabs (Central / State Buttons) */
+    .tabs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .tabs button {
+      background: white;
+      color: #333;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 25px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .tabs button:hover {
+      transform: scale(1.08);
+      background: #ffcc00;
+    }
+    .tabs button.active {
+      background: #ffcc00;
+    }
+
+    /* 📱 Responsive */
+    @media (max-width: 650px) {
+      .pm-img, .cm-img {
+        position: static;
+        display: inline-block;
+        width: 90px;
+        height: 90px;
+        margin: 10px;
+      }
+      header {
+        padding-top: 20px;
+      }
+      header h1 {
+        font-size: 22px;
+      }
+      .tabs button {
+        width: 80%;
+        font-size: 15px;
+      }
+    }
+     .social { margin-top:20px; display:flex; gap:25px; position: relative; left: 30%;}
+  .social a { font-size:22px; width:45px; height:45px; display:flex; align-items:center; justify-content:center; border-radius:50%; color:white; transition:0.3s; }
+  .social a:nth-child(1) { background:#1877f2; }
+  .social a:nth-child(2) { background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+  .social a:nth-child(3) { background:#1da1f2; }
+  .social a:nth-child(4) { background:#ff0000; }
+  .social a:nth-child(5) { background:#25d366; }
+  .social a:hover { transform:scale(1.2); box-shadow:0 0 15px rgba(0,0,0,0.6); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- 🧑‍💼 PM Image -->
+    <div class="pm-img">
+      <img src="pm.png" alt="प्रधानमंत्री">
+    </div>
+
+    <!-- 👨‍💼 CM Image -->
+    <div class="cm-img">
+      <img src="cm.jpg" alt="मुख्यमंत्री">
+    </div>
+
+    <!-- Title & Tabs -->
+    <h1>🇮🇳 केंद्र एवं 🏠 राज्य सरकार की योजनाएँ</h1>
+    <p>यहाँ देखें सभी प्रमुख सरकारी योजनाओं की जानकारी एक ही स्थान पर</p>
+    
+    <div class="tabs">
+      <button class="active">🇮🇳 केंद्र सरकार योजनाएँ</button>
+      <button>🏠 राज्य सरकार योजनाएँ</button>
+    </div>
+    <center>
+      <div class="social" >
+      <a href="https://www.instagram.com/kewal_nishad0.0/?igsh=MWt2YXpqM3R1M2J1cQ%3D%3D#"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/kewal_nishad0.0/?igsh=MWt2YXpqM3R1M2J1cQ%3D%3D#"><i class="fab fa-instagram"></i></a>
+     
+      <a href="https://www.youtube.com/@kewalnishad0.0"><i class="fab fa-youtube"></i></a>
+      <a href="https://wa.me/7999569059" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+ </center>
+  </header>
+  <!-- 🔻 यह कोड header के नीचे लगाएँ -->
+<section class="yojna-buttons">
+  <h2>🔰 योजनाओं की श्रेणियाँ</h2>
+  <div class="btn-container">
+    <button>🇮🇳 केंद्र सरकार योजना</button>
+    <button>🏠 राज्य सरकार योजना</button>
+    <button>🎓 छात्रवृत्ति योजना</button>
+    
+    <button>🚜 किसान कल्याण योजना</button>
+    <button>💰  श्रम विभाग योजना</button>
+    
+    <button>👴 पेंशन योजना</button>
+  </div>
+</section>
+
+<style>
+  /* 🟩 Yojana Buttons Section */
+  .yojna-buttons {
+    text-align: center;
+    padding: 40px 15px;
+    background: #f6f9fc;
+  }
+  .yojna-buttons h2 {
+    color: #004aad;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  /* 🔸 Buttons Style */
+  .btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .btn-container button {
+    background: linear-gradient(90deg, #004aad, #00c853);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  }
+
+  .btn-container button:hover {
+    transform: scale(1.08);
+    background: linear-gradient(90deg, #00c853, #004aad);
+  }
+
+  /* 📱 Responsive Buttons */
+  @media (max-width: 600px) {
+    .btn-container button {
+      width: 85%;
+      font-size: 15px;
+    }
+  }
+</style>
+
+<!-- 🔻 यह कोड "Buttons Section" के नीचे लगाएँ -->
+<section class="yojna-gallery">
+  <h2>📸 प्रमुख सरकारी योजनाएँ</h2>
+
+  <div class="gallery-container">
+    <!-- केंद्र सरकार योजनाएँ -->
+    <div class="yojna-card">
+      <img src="pm-awas.jpeg" alt="प्रधानमंत्री आवास योजना">
+      <h3>🏠 प्रधानमंत्री आवास योजना</h3>
+      <p>केंद्र सरकार द्वारा गरीबों को पक्का घर उपलब्ध कराने हेतु।</p>
+    </div>
+
+    <div class="yojna-card">
+      <img src="pm-kisan.jpeg" alt="प्रधानमंत्री किसान सम्मान निधि">
+      <h3>🚜 प्रधानमंत्री किसान सम्मान निधि</h3>
+      <p>देश के किसानों को ₹6000 वार्षिक आर्थिक सहायता।</p>
+    </div>
+
+    <!-- राज्य सरकार योजनाएँ -->
+    <div class="yojna-card">
+      <img src="noni-suraksha.jpeg" alt="मुख्यमंत्री नोनी सुरक्षा योजना">
+      <h3>👧 मुख्यमंत्री नोनी सुरक्षा योजना</h3>
+      <p>छत्तीसगढ़ सरकार द्वारा बेटियों के लिए आर्थिक सहायता।</p>
+    </div>
+
+    <div class="yojna-card">
+      <img src="godhann-nyay.jpeg" alt="गोधन न्याय योजना">
+      <h3>🐄 गोधन न्याय योजना</h3>
+      <p>किसानों से गोबर खरीद कर जैविक खाद निर्माण हेतु।</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* 🟦 Gallery Section */
+  .yojna-gallery {
+    text-align: center;
+    padding: 50px 15px;
+    background: #ffffff;
+  }
+  .yojna-gallery h2 {
+    color: #004aad;
+    font-size: 26px;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+
+  /* 🖼️ Gallery Container */
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    justify-content: center;
+  }
+
+  .yojna-card {
+    background: #f6f9fc;
+    border-radius: 20px;
+    overflow: hidden;
+    object-fit:contain;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+  }
+  .yojna-card:hover {
+    transform: translateY(-6px);
+  }
+
+  .yojna-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .yojna-card h3 {
+    color: #00a65a;
+    margin: 15px 0 5px;
+    font-size: 18px;
+  }
+
+  .yojna-card p {
+    font-size: 14px;
+    color: #333;
+    padding: 0 10px 15px;
+  }
+</style>
+
+</body>
+</html>
